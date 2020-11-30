@@ -32,14 +32,14 @@ apt-get -y install gcc
 1. Make changes to `input.toy`
 The input for the program is located in the `input.toy` program. It translates the text into machine readable language
 
-2. Convert `input.toy` into c program
+2. Convert `input.toy` into executable
 ```
 python main.py
 clang output.ll -c -o output.o
 gcc output.o -o output
 ```
 
-3. Run the compiler
+3. Run the executable
 ```
 ./output
 ```
