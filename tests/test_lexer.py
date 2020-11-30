@@ -38,7 +38,12 @@ def test_invalid_token(capfd):
     out, err = capfd.readouterr()
     assert out == "Token('NUMBER', '100')\n"
 
+def test_error_handling(capfd):
     # test with non number
-    with pytest.raises(Exception) as e:
+    # with pytest.raises(Exception) as e:
+    #     f("100xlkf")
+    try:
         f("100xlkf")
-    
+        assert False
+    except:
+        assert True
