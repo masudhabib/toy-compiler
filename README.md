@@ -44,3 +44,5 @@ gcc output.o -o output
 ./output
 ```
 
+Step 2 and 3 can alternatively be run as `./run_script.sh`
+
